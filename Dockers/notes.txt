@@ -1,0 +1,50 @@
+its act as  package 
+run on any machine such as docker 
+
+setting up new env or dependenceies 
+it will automatically setup your env 
+locked in a container
+conatiner will be isolated with other containers
+
+
+conatiner:
+ isolated env for running an application
+virtual Machone :
+an abstraction of a machine (physical hardware)
+
+
+
+
+VMS:---------------------
+physical hardware -> hypervisor 
+  = 2 virtual machine completely differnt from other 
+  Example:
+  virtual box
+  vmware 
+
+
+  Cons:
+  each virtual machine requires a complete os 
+  for a software 
+  slow to start 
+  resource intensive
+
+containers------------------------------
+Allow running multiple apps in isloation
+are light weight
+use os of the host 
+start quickly
+no need a slice of hardware 
+
+Dockers:
+client Server         Docker engine 
+client -> rest Api -> Server
+
+Docker is a special kind of processor using the same os 
+Windows + linux (containers)
+
+linux-> container
+
+
+installing docker
+
