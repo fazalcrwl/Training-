@@ -48,3 +48,146 @@ linux-> container
 
 installing docker
 
+client -> serevr protocol using rest api 
+
+Docker archs ---------------------------
+
+
+Docker conatin:
+Image:
+image contain :
+A cutdown osa runtime env such as anaconda
+app  files such predict.py 
+third party libs -> skleearn etc 
+environment vars-> apu keys, random seed
+
+Image->--------------- goes to cintainer
+
+
+after creating container we can push it to docker hub 
+
+
+instructions for running js file from one app to another :
+start with os 
+install node 
+copy app files
+run app.js 
+
+
+for solving all the work we will create docker file in a container'
+
+
+docker build :
+
+      for runnign app 
+FROM python:alpine -> linux small env or os 
+COPY . /app (. means current drectry select all)(/app means all the files will be copied to app file in docker container) 
+WORKDIR /app (setting the workdir to app dir )
+CMD python app.py (cmd means runnign this comman in command line )
+
+docker build       -t means name or tag of the docker 
+sudo docker build -t firstdocker . (. means current directory )
+docker image ls means list all the images in this sysytem '
+
+
+
+_____________________________________________
+Next section
+
+
+ if we want or run a ny iamges we can pull from the docker hib 
+  such as ubuntu we can use tge pull method or the 
+  if the disrtibution is famous it wil search locally or insatlla new one from the internet 
+
+#command
+sudo docker ps 
+it will tells us the how many docker process are runnign 
+
+#command
+sudo docker ps -a it will tell us the history of docker files 
+
+
+
+docker detached mode using -d 
+it will run it detached mode terminAL WILL BE FREE
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------
+
+
+
+Docker Compose :
+
+
+
+
+first removing previous dockers list 
+
+docker conatiner rm 
+removing all the docker files
+
+
+building YAMl file in conatiners so we can run compose file 
+
+
+---------------------------------------------------------
+docker network :
+
+bridge:
+docker inspect network bridge 
+it will tell us the ip 
+the connection between the host and docker image bridge
+
+
+Host _ip :
+docker run -it  --network =host docker name 
+
+it will run the docker with your ip 
+
+
+creating your own network and mapping
+docker network create -d bridge youtube 
+ docker run  -it  --network=youtube --name  anything
+
+
+
+ create your own network then run differnt containers 
+ they can communicate with each other 
+
+ ---------------------------------------------------------------------------------
+
+
+ Volume Mounting 
+ 
+
+ it act as  a permanent storage in docker file 
+ then the conatiner wil have the access of that folder from the host 
+
+ #command 
+
+ docker run -it -v {location of host Folder}: foler in docker 
+
+if we create a folder in the conatiner folder it will have the access over that folder 
+
+
+
+
+
+-------------------------------------------------------------
+Cache
+
+run ..........
+run ...........
+run .........
+if we change the run 2 in the line all the cache below 3 will be erased 
+so the line that are not changed above that file will be run 
+ 
