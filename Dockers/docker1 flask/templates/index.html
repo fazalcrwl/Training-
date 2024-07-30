@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Values</title>
+</head>
+<body>
+    <h1>Enter Three Values</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+        <label for="value1">Value 1:</label>
+        <input type="text" id="value1" name="value1" required><br><br>
+        <label for="value2">Value 2:</label>
+        <input type="text" id="value2" name="value2" required><br><br>
+        <label for="value3">Value 3:</label>
+        <input type="text" id="value3" name="value3" required><br><br>
+        <label for="value4">Value 4:</label>
+        <input type="text" id="value4" name="value4" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

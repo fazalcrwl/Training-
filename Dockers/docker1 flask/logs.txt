@@ -1,0 +1,10 @@
+Docker important Commands
+1 from 
+2 Copy
+3  expose
+4 worker
+5 run
+6 cmd 
+
+
+first of all you need to  create a base image 
