@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <p>It's the Homepage</p>
+    <p>{{ result }}</p>
+    <br>
+    <p>For loop processing list</p>
+    {% for n in fruits %}
+    <div>{{ n.name }}  {{ n.price }}</div>
+    {% if n.price > 10 %}
+        <p>This is the name of the company: {{ n.name }}</p>
+    {% endif %}
+    {% endfor %}
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
