@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  db:
+    build: ./app1
+    volumes:
+      - shared_data:/data
+    container_name: db_container
+
+  web:
+    build: ./app2
+    volumes:
+      - shared_data:/data
+    ports:
+      - "5001:5000"
+    depends_on:
+      - db
+
+volumes:
+  shared_data:

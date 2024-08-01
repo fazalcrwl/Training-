@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persons List</title>
+</head>
+<body>
+    <h1>Persons List</h1>
+    <ul>
+        {% for person in persons %}
+            <li>{{ person[1] }} - {{ person[2] }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Add a new person</h2>
+    <form action="/add" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>

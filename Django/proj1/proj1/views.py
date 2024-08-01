@@ -1,8 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def about_us(request):
-    return HttpResponse("welcome to this world")
 
 def about_usid(request,aboutid):
     return HttpResponse(aboutid)
@@ -26,3 +24,17 @@ def forhtmldict(request):
     data={"fruits":[{"name":"apple","price":24},
                     {"name":"orange","price":50}]}
     return render(request,"index.html",data)
+
+
+
+
+def about_us(request):
+    # Random data to display
+    context = {
+        'company_name': 'Tech Innovations Inc.',
+        'founder': 'Jane Doe',
+        'founded_year': 2020,
+        'mission': 'To innovate and create technology solutions that enhance lives.',
+        'team': ['Alice Smith', 'Bob Johnson', 'Carol Davis']
+    }
+    return render(request, 'about_us.html', context)
