@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: housing_price
+Version: 0.0.0.0
+Summary: A small python package for Linear regression app
+Home-page: https://github.com/fazal/housing_price
+Author: fazal
+Author-email: fazal.rabbi@devsinc.com
+Project-URL: Bug Tracker, https://github.com/fazal/housing_price/issues
+
+workflows:
+
+    update config yaml
+    update params.yaml
+    update entitiy
+    update teh config manager in src config
+    update components
+    update pipeline
+    update main.py
+    update app.py
