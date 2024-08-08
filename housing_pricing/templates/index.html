@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Model</title>
+</head>
+<body>
+
+
+
+    <form action="/predict" method="POST">
+        <input type="number" name="bedrooms" placeholder="Bedrooms" required>
+        <input type="number" name="bathrooms" placeholder="Bathrooms" required>
+        <input type="number" name="sqft_living" placeholder="Sqft Living" required>
+        <input type="number" name="sqft_lot" placeholder="Sqft Lot" required>
+        <input type="number" name="floors" placeholder="Floors" required>
+        <input type="number" name="waterfront" placeholder="Waterfront (0 or 1)" required>
+        <input type="number" name="view" placeholder="View" required>
+        <input type="number" name="condition" placeholder="Condition" required>
+        <input type="number" name="grade" placeholder="Grade" required>
+        <input type="number" name="sqft_above" placeholder="Sqft Above" required>
+        <input type="number" name="sqft_basement" placeholder="Sqft Basement" required>
+        <input type="number" name="yr_built" placeholder="Year Built" required>
+        <input type="number" name="yr_renovated" placeholder="Year Renovated" required>
+        <input type="number" name="zipcode" placeholder="Zipcode" required>
+        <input type="text" name="lat" placeholder="Latitude" required>
+        <input type="text" name="long" placeholder="Longitude" required>
+        <input type="number" name="sqft_living15" placeholder="Sqft Living 15" required>
+        <input type="number" name="sqft_lot15" placeholder="Sqft Lot 15" required>
+        <button type="submit">Predict</button>
+    </form>
+    
+</body>
+</html>

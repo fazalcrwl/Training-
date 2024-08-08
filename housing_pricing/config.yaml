@@ -1,0 +1,28 @@
+artifacts_root: artifacts
+
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_url: https://www.kaggle.com/code/nebilekodaz/knn-notebook
+  local_data_file: artifcats/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion/unzip_dir
+
+
+data_pretraining:
+  root_dir: artifacts/data_pretraining
+  unzip_dir: artifacts/data_ingestion/unzip_dir/data.csv
+  pretrainn_data: artifacts/data_pretraining/save_data
+
+
+
+data_training:
+  root_dir: artifacts/data_training
+  pretrainn_data: artifacts/data_pretraining/save_data
+  model_save: artifacts/data_training/save_model
+
+
+
+data_training:
+  root_dir: artifacts/predict
+  model_save: artifacts/data_training/save_model
